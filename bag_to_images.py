@@ -48,6 +48,7 @@ def main():
     bag = rosbag.Bag(args.bag_file, "r")
     #bridge = CvBridge()
     count = 0
+    x = 1
 
     for topic, msg, time in bag.read_messages(topics=args.input_topics):
         #print topic 
